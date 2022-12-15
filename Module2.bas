@@ -1,14 +1,14 @@
 Attribute VB_Name = "Module2"
-'visa5_test1_xxx_‘—ó.
-'’ïR’l‚Ì’l‚ğ’Ç‹L‘Î‰
-Sub ‘—ó“dƒOƒ‰ƒt3()
+'visa5_test1_xxx_é€å—.
+'æŠµæŠ—å€¤ã®å€¤ã‚’è¿½è¨˜å¯¾å¿œ
+Sub é€å—é›»ã‚°ãƒ©ãƒ•3()
 
     lastRowNum = Cells(Rows.Count, 1).End(xlUp).Row
 
-    Tick_time = InputBox("ƒOƒ‰ƒtŠÔŠÔŠu(•ªj‚ğ“ü—Í")
+    Tick_time = InputBox("ã‚°ãƒ©ãƒ•æ™‚é–“é–“éš”(åˆ†ï¼‰ã‚’å…¥åŠ›")
     Tick_time = Tick_time / 24 / 60
-    Start_time = InputBox("ŠJnŠÔ(13:10 -> 1310 “ü—Íj©“®‚Í0“ü—Í ")
-    Stop_time = InputBox("I—¹ŠÔ(13:30 -> 1330 “ü—Íj©“®‚Í0“ü—Í")
+    Start_time = InputBox("é–‹å§‹æ™‚é–“(13:10 -> 1310 å…¥åŠ›ï¼‰è‡ªå‹•ã¯0å…¥åŠ› ")
+    Stop_time = InputBox("çµ‚äº†æ™‚é–“(13:30 -> 1330 å…¥åŠ›ï¼‰è‡ªå‹•ã¯0å…¥åŠ›")
     
     If Start_time <> 0 Then
         Start_time_h = Start_time \ 100
@@ -79,7 +79,7 @@ Sub ‘—ó“dƒOƒ‰ƒt3()
       
     End With
 
-'   Chart1b‚Ì•`‰æ(Œø—¦A—Í—¦j
+'   Chart1bã®æç”»(åŠ¹ç‡ã€åŠ›ç‡ï¼‰
 
     With Chart1b.Chart
         .ChartType = xlXYScatterSmoothNoMarkers
@@ -110,7 +110,7 @@ Sub ‘—ó“dƒOƒ‰ƒt3()
         
     End With
 
-'   Chart2b‚Ì•`‰æ
+'   Chart2bã®æç”»
 
     With Chart2b.Chart
         .ChartType = xlXYScatterSmoothNoMarkers
@@ -158,7 +158,7 @@ Sub ‘—ó“dƒOƒ‰ƒt3()
 End Sub
 
 
-Sub [“d‘•’uƒOƒ‰ƒt’²®()
+Sub å……é›»è£…ç½®ã‚°ãƒ©ãƒ•èª¿æ•´()
     With ActiveSheet.ChartObjects(1).Chart.PlotArea
         .Width = 700
         .Left = 10
@@ -177,7 +177,7 @@ Sub [“d‘•’uƒOƒ‰ƒt’²®()
 End Sub
 
 
-Sub ‰ğÍ1ƒOƒ‰ƒt’²®()
+Sub è§£æ1ã‚°ãƒ©ãƒ•èª¿æ•´()
     With ActiveSheet.ChartObjects(1).Chart.PlotArea
         .Width = 650
         .Left = 30
@@ -191,10 +191,10 @@ Sub ‰ğÍ1ƒOƒ‰ƒt’²®()
 End Sub
 
 ' --------------------------------------------------------------------------------
-' ˆÈ‰º‚Ìˆ—‚Í“d—¬İ’è‚²‚Æ‚Ì‘—ó“d“d—Í‚¨‚æ‚Ñ“d—¬İ’è‚²‚Æ‚ÌŒø—¦‚¨‚æ‚Ñ—Í—¦‚Ì‰ğÍ‚ğÀ{B
-' ‰ğÍŒ‹‰Ê‚ÍV‹K‚Ìƒ[ƒNƒV[ƒg‚Éo—Í‚·‚é‚Ì‚ÄƒOƒ‰ƒt•`‰æ‚ÍSub ‰ğÍ1ƒOƒ‰ƒt()‚ÅÀs‚·‚éB
-' –{“–‚Í•Êƒtƒ@ƒCƒ‹‚É‚µ‚½•û‚ª—Ç‚©‚Á‚½‚©‚àEE
-Sub ‰ğÍ1()
+' ä»¥ä¸‹ã®å‡¦ç†ã¯é›»æµè¨­å®šã”ã¨ã®é€å—é›»é›»åŠ›ãŠã‚ˆã³é›»æµè¨­å®šã”ã¨ã®åŠ¹ç‡ãŠã‚ˆã³åŠ›ç‡ã®è§£æã‚’å®Ÿæ–½ã€‚
+' è§£æçµæœã¯æ–°è¦ã®ãƒ¯ãƒ¼ã‚¯ã‚·ãƒ¼ãƒˆã«å‡ºåŠ›ã™ã‚‹ã®ã¦ã‚°ãƒ©ãƒ•æç”»ã¯Sub è§£æ1ã‚°ãƒ©ãƒ•()ã§å®Ÿè¡Œã™ã‚‹ã€‚
+' æœ¬å½“ã¯åˆ¥ãƒ•ã‚¡ã‚¤ãƒ«ã«ã—ãŸæ–¹ãŒè‰¯ã‹ã£ãŸã‹ã‚‚ãƒ»ãƒ»
+Sub è§£æ1()
 
     Dim current(25) As Variant
     Dim t_power(25) As Variant
@@ -231,8 +231,8 @@ Sub ‰ğÍ1()
         hensu(21) = 3337
         hensu(22) = 3405
 
-    Start_row = InputBox("ŠJns")
-    End_row = InputBox("ÅŒã‚Ìs")
+    Start_row = InputBox("é–‹å§‹è¡Œ")
+    End_row = InputBox("æœ€å¾Œã®è¡Œ")
 
     'Start_time_s = Start_time Mod 100
     'Mnimum_time = Fix(Cells(2, 3))
@@ -297,14 +297,14 @@ Sub ‰ğÍ1()
     ws2.Cells(1, 3) = "r_power"
     ws2.Cells(1, 4) = "ach_power"
     ws2.Cells(1, 5) = "ch_power"
-    ws2.Cells(1, 6) = "Œø—¦1"
-    ws2.Cells(1, 7) = "Œø—¦2"
-    ws2.Cells(1, 8) = "Œø—¦3"
-    ws2.Cells(1, 9) = "—Í—¦"
+    ws2.Cells(1, 6) = "åŠ¹ç‡1"
+    ws2.Cells(1, 7) = "åŠ¹ç‡2"
+    ws2.Cells(1, 8) = "åŠ¹ç‡3"
+    ws2.Cells(1, 9) = "åŠ›ç‡"
 
-    ws2.Cells(1, 11) = "ŠJns"
+    ws2.Cells(1, 11) = "é–‹å§‹è¡Œ"
     ws2.Cells(1, 12) = Start_row
-    ws2.Cells(2, 11) = "’â~s"
+    ws2.Cells(2, 11) = "åœæ­¢è¡Œ"
     ws2.Cells(2, 12) = End_row
 
     For n = 1 To 22
@@ -331,8 +331,8 @@ Sub zeros(a, b, c, d, e, f)
     f = 0
 End Sub
 
-'“d—¬İ’è‚²‚Æ‚Ì‘—ó“d“d—Í‚¨‚æ‚Ñ“d—¬İ’è‚²‚Æ‚ÌŒø—¦‚¨‚æ‚Ñ—Í—¦‚Ì‰ğÍ‚ğÀ{
-Sub ‰ğÍ1ƒOƒ‰ƒt()
+'é›»æµè¨­å®šã”ã¨ã®é€å—é›»é›»åŠ›ãŠã‚ˆã³é›»æµè¨­å®šã”ã¨ã®åŠ¹ç‡ãŠã‚ˆã³åŠ›ç‡ã®è§£æã‚’å®Ÿæ–½
+Sub è§£æ1ã‚°ãƒ©ãƒ•()
 
     Set Chart0b = ActiveSheet.ChartObjects.Add(500, 50, 450, 350)
     Set Chart1b = ActiveSheet.ChartObjects.Add(975, 50, 450, 350)
@@ -342,19 +342,19 @@ Sub ‰ğÍ1ƒOƒ‰ƒt()
         .ChartType = xlXYScatter
         .SetSourceData Range(Cells(1, 1), Cells(lastRowNum, 5))
         .HasTitle = True
-        .ChartTitle.Text = "“d—¬İ’è‚²‚Æ‚Ì‘—ó“d“d—Í"
+        .ChartTitle.Text = "é›»æµè¨­å®šã”ã¨ã®é€å—é›»é›»åŠ›"
         With .ChartTitle.Format.TextFrame2.TextRange.Font
             .Size = 20
             .Fill.ForeColor.ObjectThemeColor = msoThemeColorDark2
         End With
         
         .Axes(xlValue, 1).HasTitle = True
-        .Axes(xlValue, 1).AxisTitle.Text = "“d—Í[W]"
+        .Axes(xlValue, 1).AxisTitle.Text = "é›»åŠ›[W]"
         .Axes(xlValue, 1).MinimumScale = 0
         .Axes(xlValue, 1).MaximumScale = 4500
     
         .Axes(xlCategory, 1).HasTitle = True
-        .Axes(xlCategory, 1).AxisTitle.Text = "“d—¬[A]"
+        .Axes(xlCategory, 1).AxisTitle.Text = "é›»æµ[A]"
         
      
         .Axes(xlCategory, 1).MinimumScale = 5
@@ -371,44 +371,44 @@ Sub ‰ğÍ1ƒOƒ‰ƒt()
 
     Set ChartOb = ActiveSheet.ChartObjects(1)
     
-    With ChartOb.Chart.SeriesCollection(2) 'Œn—ñ2‚ğw’è
+    With ChartOb.Chart.SeriesCollection(2) 'ç³»åˆ—2ã‚’æŒ‡å®š
         .Select
         '.MarkerStyle = xlMarkerStyleCircle
-        .Trendlines.Add 'Œn—ñ2‚Ì‹ß—‹Èü‚ğ’Ç‰Á
+        .Trendlines.Add 'ç³»åˆ—2ã®è¿‘ä¼¼æ›²ç·šã‚’è¿½åŠ 
         .Trendlines(1).Select
         If .Type = xlPolynomial Then .Order = 1
           
         With Selection.Border
-           .ColorIndex = 15 ' ü‚ÌF:ŠD
-           .Weight = xlThin ' ü‚Ìí—ŞF”–ü
-           .LineStyle = xlDot ' ü‚ÌƒXƒ^ƒCƒ‹F“_ü
+           .ColorIndex = 15 ' ç·šã®è‰²:ç°
+           .Weight = xlThin ' ç·šã®ç¨®é¡ï¼šè–„ç·š
+           .LineStyle = xlDot ' ç·šã®ã‚¹ã‚¿ã‚¤ãƒ«ï¼šç‚¹ç·š
            
         End With
     End With
     
-    With ChartOb.Chart.SeriesCollection(3) 'Œn—ñ3‚ğw’è
+    With ChartOb.Chart.SeriesCollection(3) 'ç³»åˆ—3ã‚’æŒ‡å®š
         .Select
-        .Trendlines.Add 'Œn—ñ3‚Ì‹ß—‹Èü‚ğ’Ç‰Á
+        .Trendlines.Add 'ç³»åˆ—3ã®è¿‘ä¼¼æ›²ç·šã‚’è¿½åŠ 
         .Trendlines(1).Select
         If .Type = xlPolynomial Then .Order = 1
         With Selection.Border
-           .ColorIndex = 15 ' ü‚ÌF:ŠDF
-           .Weight = xlThin ' ü‚Ìí—ŞF”–ü
-           .LineStyle = xlDot ' ü‚ÌƒXƒ^ƒCƒ‹F“_ü
+           .ColorIndex = 15 ' ç·šã®è‰²:ç°è‰²
+           .Weight = xlThin ' ç·šã®ç¨®é¡ï¼šè–„ç·š
+           .LineStyle = xlDot ' ç·šã®ã‚¹ã‚¿ã‚¤ãƒ«ï¼šç‚¹ç·š
         End With
     End With
     
-    With ChartOb.Chart.SeriesCollection(4) 'Œn—ñ4‚ğw’è
+    With ChartOb.Chart.SeriesCollection(4) 'ç³»åˆ—4ã‚’æŒ‡å®š
         .Select
         .MarkerStyle = xlMarkerStyleCircle
-        .Trendlines.Add 'Œn—ñ4‚Ì‹ß—‹Èü‚ğ’Ç‰Á
+        .Trendlines.Add 'ç³»åˆ—4ã®è¿‘ä¼¼æ›²ç·šã‚’è¿½åŠ 
         
         .Trendlines(1).Select
         If .Type = xlPolynomial Then .Order = 1
         With Selection.Border
-           .ColorIndex = 15 ' ü‚ÌF:ŠDF
-           .Weight = xlThin ' ü‚Ìí—ŞF”–ü
-           .LineStyle = xlDot ' ü‚ÌƒXƒ^ƒCƒ‹F“_ü
+           .ColorIndex = 15 ' ç·šã®è‰²:ç°è‰²
+           .Weight = xlThin ' ç·šã®ç¨®é¡ï¼šè–„ç·š
+           .LineStyle = xlDot ' ç·šã®ã‚¹ã‚¿ã‚¤ãƒ«ï¼šç‚¹ç·š
         End With
     End With
 
@@ -417,7 +417,7 @@ Sub ‰ğÍ1ƒOƒ‰ƒt()
         .SetSourceData Union(Range(Cells(1, 1), Cells(lastRowNum, 1)), Range(Cells(1, 6), Cells(lastRowNum, 9)))
 
         .HasTitle = True
-        .ChartTitle.Text = "“d—¬İ’è‚²‚Æ‚ÌŒø—¦‚¨‚æ‚Ñ—Í—¦"
+        .ChartTitle.Text = "é›»æµè¨­å®šã”ã¨ã®åŠ¹ç‡ãŠã‚ˆã³åŠ›ç‡"
          With .ChartTitle.Format.TextFrame2.TextRange.Font
             .Size = 20
             .Fill.ForeColor.ObjectThemeColor = msoThemeColorDark2
@@ -425,12 +425,12 @@ Sub ‰ğÍ1ƒOƒ‰ƒt()
         
         
         .Axes(xlValue, 1).HasTitle = True
-        .Axes(xlValue, 1).AxisTitle.Text = "Œø—¦/—Í—¦"
+        .Axes(xlValue, 1).AxisTitle.Text = "åŠ¹ç‡/åŠ›ç‡"
         .Axes(xlValue, 1).MinimumScale = 0
         .Axes(xlValue, 1).MaximumScale = 1
     
         .Axes(xlCategory, 1).HasTitle = True
-        .Axes(xlCategory, 1).AxisTitle.Text = "“d—¬[A]"
+        .Axes(xlCategory, 1).AxisTitle.Text = "é›»æµ[A]"
         
      
         .Axes(xlCategory, 1).MinimumScale = 5
@@ -445,7 +445,7 @@ Sub ‰ğÍ1ƒOƒ‰ƒt()
     End With
   
   
-    With Chart1b.Chart.SeriesCollection(4) 'Œn—ñ4‚ğw’è
+    With Chart1b.Chart.SeriesCollection(4) 'ç³»åˆ—4ã‚’æŒ‡å®š
         .Select
         .MarkerStyle = xlMarkerStyleCircle
     End With
